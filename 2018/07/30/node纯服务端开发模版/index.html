@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>node纯服务端开发模版 | 资料库</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="api-node-cli说明该项目为node微小服务端开发框架。工具,db,service,router,config分离，提供mongo(mongoist)，mysql(mysql)，redis(ioredis)数据库基础工具。项目环境可配置，统一请求和返回值处理，自定义错误信息，可配置日志（错误和请求），可选择邮件提示。 第一步全局安装 sudo npm install api-node-cl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="node纯服务端开发模版">
+<meta property="og:url" content="https://jiuhao.github.io/2018/07/30/node纯服务端开发模版/index.html">
+<meta property="og:site_name" content="资料库">
+<meta property="og:description" content="api-node-cli说明该项目为node微小服务端开发框架。工具,db,service,router,config分离，提供mongo(mongoist)，mysql(mysql)，redis(ioredis)数据库基础工具。项目环境可配置，统一请求和返回值处理，自定义错误信息，可配置日志（错误和请求），可选择邮件提示。 第一步全局安装 sudo npm install api-node-cl">
+<meta property="og:locale" content="Chinese">
+<meta property="og:updated_time" content="2018-07-29T13:55:50.062Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="node纯服务端开发模版">
+<meta name="twitter:description" content="api-node-cli说明该项目为node微小服务端开发框架。工具,db,service,router,config分离，提供mongo(mongoist)，mysql(mysql)，redis(ioredis)数据库基础工具。项目环境可配置，统一请求和返回值处理，自定义错误信息，可配置日志（错误和请求），可选择邮件提示。 第一步全局安装 sudo npm install api-node-cl">
+  
+    <link rel="alternate" href="/atom.xml" title="资料库" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">资料库</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">个人站</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://jiuhao.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-node纯服务端开发模版" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/node纯服务端开发模版/" class="article-date">
+  <time datetime="2018-07-29T21:53:26.000Z" itemprop="datePublished">2018-07-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      node纯服务端开发模版
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="api-node-cli"><a href="#api-node-cli" class="headerlink" title="api-node-cli"></a>api-node-cli</h1><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>该项目为node微小服务端开发框架。工具,db,service,router,config分离，提供mongo(mongoist)，mysql(mysql)，redis(ioredis)数据库基础工具。项目环境可配置，统一请求和返回值处理，自定义错误信息，可配置日志（错误和请求），可选择邮件提示。</p>
+<h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>全局安装 sudo npm install api-node-cli -g</p>
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>创建工程目录 mkdir demo</p>
+<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>进入工程新目录 cd demo</p>
+<h3 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h3><p>执行命令 api-node-cli 构建目录</p>
+<h3 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h3><p>自定义 package.json </p>
+<h3 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h3><p>安装依赖 npm install</p>
+<h3 id="第七步"><a href="#第七步" class="headerlink" title="第七步"></a>第七步</h3><p>修改配置 值选择配置文件夹 config/dev,config/product,config/test 默认为config/dev</p>
+<h3 id="第八步"><a href="#第八步" class="headerlink" title="第八步"></a>第八步</h3><p>自定义.gitignore</p>
+<h3 id="第九步"><a href="#第九步" class="headerlink" title="第九步"></a>第九步</h3><p>运行app.js(webstorm) / 1. sudo npm install pm2 -g 2. npm run dev 将根据package.json中的</p>
+<h3 id="第十步"><a href="#第十步" class="headerlink" title="第十步"></a>第十步</h3><p>创建数据库 test 新建表 t1 -&gt; 字段 id,name 插入数据<br>使用postman工具模拟请求 <a href="http://localhost:7001/api/user/hello" target="_blank" rel="noopener">http://localhost:7001/api/user/hello</a> 传参数 id:1</p>
+<h3 id="TIPS"><a href="#TIPS" class="headerlink" title="TIPS"></a>TIPS</h3><p>1.为方便管理建议重命名 app.js为 项目名.js 并同时修改 pm2.json下的name<br><br>2.README.md提供目录结构解释<br><br>3.请求日志和错误日志路径参照 app/config/log.js<br><br>4.mongo操作依赖模块<a href="https://github.com/saintedlama/mongoist" target="_blank" rel="noopener">mongoist</a><br>5.mysql操作依赖模块<a href="https://github.com/mysqljs/mysql" target="_blank" rel="noopener">mysql</a>，在app/common/mysql.js 中进行了方法的简单封装：<br><br>getConnection 从连接池里获取一个数据库连接<br><br>beginTransaction 开始事物<br><br>commit 提交事物<br><br>rollback 回滚事物<br><br>query 返回查询相关的所有信息{results, fields}<br><br>findOne 返回一条结果集对象<br><br>find 返回多条结果集数组<br><br>update 返回修改的行数<br><br>insert 返回插入的id<br><br>6./router下index.js 中将对所有请求进行拦截格式化处理和记录日志，可通过路由正则的方式进行额外处理<br><br>7./error下封装了自定义的错误类型<br><br>8.<a href="https://github.com/moment/moment" target="_blank" rel="noopener">时间处理模块moment</a>  <a href="https://github.com/chriso/validator.js" target="_blank" rel="noopener">校验模块validator</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://jiuhao.github.io/2018/07/30/node纯服务端开发模版/" data-id="cjk6x4zhs0001jmwgb3uck7r3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/07/30/node纯服务端开发模版/">node纯服务端开发模版</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/29/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 石浩<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
